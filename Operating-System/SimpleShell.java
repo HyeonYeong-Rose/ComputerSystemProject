@@ -19,7 +19,7 @@ public class SimpleShell_SHY {
 			//#4. split the String into a String Array
 			String[] command = commandLine.split(" ");
 			
-			//#9. if the command entered is ¡°exit¡± or "quit" , the shell outputs ¡°Goodbye.¡±
+			//#9. if the command entered is Â¡Â°exitÂ¡Â± or "quit" , the shell outputs Â¡Â°Goodbye.Â¡Â±
 			if (commandLine.equals("quit")||commandLine.equals("exit")){
                 System.out.println("Goodbye.");
                 System.exit(0);
@@ -31,7 +31,7 @@ public class SimpleShell_SHY {
             if(list.get(0).equals("!!")){
                 if(history.size()>0){
                     commandLine = history.get(history.size()-1);
-                  //split the user input based on a single ¡®space¡¯ character and saving the result in a String array
+                  //split the user input based on a single Â¡Â®spaceÂ¡Â¯ character and saving the result in a String array
                     command = commandLine.split(" ");
                     
                     for(int i=0; i<command.length; i++) {
@@ -52,7 +52,7 @@ public class SimpleShell_SHY {
                     int index = Integer.parseInt(a);
                     
                     commandLine = history.get(index);
-                    //split the user input based on a single ¡®space¡¯ character and saving the result in a String array
+                    //split the user input based on a single Â¡Â®spaceÂ¡Â¯ character and saving the result in a String array
                     command = commandLine.split(" ");
                     list = new ArrayList<>(Arrays.asList(command));
                 
